@@ -5,7 +5,7 @@ volatile int buttonState = LOW; // Variabele voor de knopstatus, gemarkeerd als 
 void setup() {
   pinMode(ledPin, OUTPUT);          // Initialiseer de LED-pin als uitgang
   pinMode(buttonPin, INPUT_PULLUP); // Initialiseer de knop-pin als ingang en activeer de interne pull-up weerstand
-  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, CHANGE); // Voeg een interrupt toe voor de knop
+  attachInterrupt(digitalPinToInterrupt(buttonPin), buttonInterrupt, RISING); // Voeg een interrupt toe voor de knop
 }
 
 void loop() {

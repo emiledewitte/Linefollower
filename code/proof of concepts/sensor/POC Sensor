@@ -20,7 +20,7 @@ void loop()
   // Lezen sensorwaardes
   qtr.read(sensorValues);
 
-  // Schrijven van sensorwaardes (0 tot 1023), met 0 = max reflectie en 1023 = min reflectie
+  // Schrijven van sensorwaardes (0 tot 1023)
   for (uint8_t i = 0; i < SensorCount; i++)
   {
     Serial.print(sensorValues[i]);
@@ -30,3 +30,4 @@ void loop()
 
   delay(250);
 }
+
